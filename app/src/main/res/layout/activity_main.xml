@@ -4,15 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/digita_numeros1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:hint="@string/n_meros"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/digita_numeros2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/n_meros"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/digita_numeros1" />
+
+    <RadioGroup
+        android:id="@+id/operacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/digita_numeros2"
+        app:layout_constraitStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/divisao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dividir" />
+
+        <RadioButton
+            android:id="@+id/multiplicacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplicar" />
+
+        <RadioButton
+            android:id="@+id/soma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/somar" />
+
+        <RadioButton
+            android:id="@+id/subtracao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtrair" />
+
+        <Button
+            android:id="@+id/calculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="resultado"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/operacoes"
+        tools:layout_editor_absoluteX="16dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
