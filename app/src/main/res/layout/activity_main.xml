@@ -32,7 +32,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/digita_numeros2"
-        app:layout_constraitStart_toStartOf="parent">
+        android:checkedButton="@id/digita_numeros1"
+       >
 
         <RadioButton
             android:id="@+id/divisao"
@@ -62,7 +63,7 @@
             android:id="@+id/calculo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="="
+            android:text="="/>
 
 
     </RadioGroup>
@@ -75,7 +76,8 @@
         android:text="resultado"
         android:textSize="24sp"
         app:layout_constraintTop_toBottomOf="@+id/operacoes"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        android:id="@+id/resultado"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

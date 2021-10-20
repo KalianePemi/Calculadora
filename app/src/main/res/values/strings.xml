@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Calculadora</string>
     <string name="n_meros">Números</string>
-    <string name="n_meros">Números</string>
+    <string name="n_meros2">Números</string>
     <string name="dividir">dividir</string>
     <string name="multiplicar">multiplicar</string>
     <string name="somar">somar</string>
